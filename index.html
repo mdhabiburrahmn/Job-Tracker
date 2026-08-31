@@ -62,17 +62,20 @@
             Available Jobs
         </h1>
         <div class="all-tabs flex justify-start gap-5 mt-8">
-            <button 
+            <button
+            onclick="switchTab('all')" 
             class="px-5 py-1.5 rounded-full border-2 text-sm font-medium cursor-pointer transition-all duration-200">
             All
             </button>
     
-            <button 
+            <button
+            onclick="switchTab('interview')"  
              class="px-5 py-1.5 rounded-full border-2 text-sm font-medium cursor-pointer transition-all duration-200">
             Interview
             </button>
 
-            <button 
+            <button
+            onclick="switchTab('rejected')"  
             class="px-5 py-1.5 rounded-full border-2 text-sm font-medium cursor-pointer transition-all duration-200">
             Rejected
             </button>
@@ -138,5 +141,6 @@
     </section>
 
 
+    <script src="script.js"></script>
 </body>
 </html>
