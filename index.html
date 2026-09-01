@@ -63,18 +63,21 @@
         </h1>
         <div class="all-tabs flex justify-start gap-5 mt-8">
             <button
+            id="tab-all"
             onclick="switchTab('all')" 
             class="px-5 py-1.5 rounded-full border-2 text-sm font-medium cursor-pointer transition-all duration-200">
             All
             </button>
     
             <button
+            id="tab-interview"
             onclick="switchTab('interview')"  
              class="px-5 py-1.5 rounded-full border-2 text-sm font-medium cursor-pointer transition-all duration-200">
             Interview
             </button>
 
             <button
+            id="tab-rejected"
             onclick="switchTab('rejected')"  
             class="px-5 py-1.5 rounded-full border-2 text-sm font-medium cursor-pointer transition-all duration-200">
             Rejected
@@ -139,6 +142,23 @@
 
         
     </section>
+
+    <div 
+        id="empty-state" 
+        class="flex-col items-center justify-center py-20 gap-4 text-center">
+        <div 
+        class="text-2xl flex justify-center ">
+        <img src="./Images/jobs.png" alt="" class="">
+        </div>
+            <p 
+            class="font-syne text-lg font-bold text-navy">
+            No jobs available
+            </p>
+            <p 
+            class="text-sm text-slate-400">
+            Check back soon for new job opportunities.
+            </p>
+    </div>
 
 
     <script src="script.js"></script>
